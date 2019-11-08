@@ -118,6 +118,7 @@ def test():
 
     # print(html.text)
 
+#个人页面测试
 def test2():
     headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:70.0) Gecko/20100101 Firefox/70.0',
@@ -128,7 +129,7 @@ def test2():
     print(html.text)
 ##    name = re.find()
 
-#保存cookies
+#保存cookies（序列化）
 def cookie_save():
     cookie = requests.utils.dict_from_cookiejar(s.cookies)
     with open('cookie.txt' , 'w') as f:
