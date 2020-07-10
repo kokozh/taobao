@@ -13,8 +13,8 @@ s = requests.session()
 def check_login():
     url_login_check = 'https://login.taobao.com/member/request_nick_check.do?_input_charset=utf-8'
     data = {'username': '15626724248',
-            'ua': '121#eOllkGZ0bUwlVl2qxF/JlV+GecP44uiI8tOQxbHIeMC3OW1i73eblXtYOc8fD7jVlGgY+aBIDMpdyzaxEmD5VM/YOcffx5iIiHdm+zP5KllVO3rrE5DIll9YOc8fDujllwgYxaPIKM9lOQrJEmD5lwLYO78fK5i5R48r5lQVBIbvsbc9MtFPD0rWXVFbbZ3glWfopCibkZ0T83Smbgi0CeIAFtZFHOpznjxSRjLbCZeTM3tA3pFDkeHXmo60bZienqC9pCibCZ0T83BhbZs0keHaF9FbbZsbnjxSpXb0MqAWQtBlQqS0mARltoJHMEeqPyx+P2603CLP831hbZs0jQtAZnqwt5cI4/WZPwz5XgFk7bObblPYmmWxA8ylpHXKLOpZ9E58FglhTy4VCkDHQZ//nJShI5fAjv8FLvSedPY6S9VgS5hp5N4G+Bn5R+4MEOASwNh/+PiemcMeuHFghaAZivbFHE48p5RMjM8VGFQhO5S+IK2KQv5+D2M0pxdIlp9PlFFCRJGlfUjz78iGp8wn9J9btCB67pUUuWyCM+OuAVtrYL7dimYJGlR+m10io23YvgwRgSIiIhkVvoxcQIMq7lpXrDpbPUO/W6QBNNTmPpKw/XdTKdFopp+TNjMI2iHCtAqoOSNql0NvO5Wk9/XdaaYUQSKjzlzixap94lOjPRpuWWtfEApGWAwoMGLjRXbMm51cfGK4dFWBBkVNEQrZqiXZT5g8DCN03O2Ttuzvwt7Cxu3s0bRQyJzuMuQy+iIW/wSRwWe6YG2u8VDXeDGfu60TEA3yC2FNChVNwQ90VwaGtnia3QWGam3t97NX+/VW35+yR0Ivvr+yVrquziyoWJ6DEKTdsAbgfoQ/VjghBVCKqXL3IYLfZHWtkzDDM7MeBhu7PTo1yLT6VDKRjbWj6cd3Cs9sHkvkOgWrJ3tKef/sYpTH3F6+mTgRmfK6QYL8wp4XOJ9lvxdAB/YycQG0dV3KgLaxWaa5W9cSNDS93wEuI7J4lqYWmQxRnUTooWyweIAU/zlZg6vAFQT6Oh642HTyQxK3Aye7cqGXIJBW7WYYOJZuvTrozn0zxy8cSxhFHlo5xYA7Fxf1QHAcvSjbERAsLJn9HwkdPHmk4t2x88XOD91u6qK6stVrXpu/EUM/834wABRFexpPTpBQ7QLHYF1sdAxr8vKuuk3h2Z+H1m5pvl3j0i81qKAT0pSaPjNQkTZcIwldjMRJoOc4bxNFtIHw218y7DNBGyJSZOcjWC+iScg1gEGkiB0OCrY9FAX4bkax7NjhLF38cBC1klmrQPAATQ1iRuioIMsHc2BTi44o'
-            }
+            'ua': '填写自己的ua'
+           }
     try:
         re_check = s.post(url_login_check , data=data , timeout = 10)
         
