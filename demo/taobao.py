@@ -12,7 +12,7 @@ s = requests.session()
 #检查账号是否需要滑块验证
 def check_login():
     url_login_check = 'https://login.taobao.com/member/request_nick_check.do?_input_charset=utf-8'
-    data = {'username': '15626724248',
+    data = {'username': '自己的帐号',
             'ua': '填写自己的ua'
            }
     try:
