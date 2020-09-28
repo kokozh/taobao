@@ -111,6 +111,7 @@ def test():
                     f.write(','.join([name[ii] , price[ii] , loc[ii], sales[ii], nick[ii] , '\n'] )) 
                     # print(name[i] , price[i] , loc[i] , sales[i] , nick[i] ,'\n')
     except Exception as e:
+        print(e)
         print('被抓啦','第{}页'.format(i))
         # print('休息150秒再继续')
         # time.sleep(150)
